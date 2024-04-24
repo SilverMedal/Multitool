@@ -1,0 +1,71 @@
+// * Стили самого секундомера
+
+.stopwatch {
+    width: 350px;
+
+    margin: 20% auto;
+}
+
+.stopwatch-output {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 86px;
+
+}
+
+// * Стили чисел и разделителя
+
+.number{
+    width: 100px;
+    height: 100px;
+
+    text-align: center;
+}
+
+.separation{
+    padding-bottom: 15px;
+}
+
+// * Стили кнопок
+
+.stopwatch-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    border: rgb(172, 43, 129) 2px solid;  
+}
+
+.start-btn {
+    margin-left: 70px;
+    transition: 0.2s ease-in;
+
+    // ^ hover эффект для скейла и смены света
+    &:hover{
+        background-color: lightgreen;
+        border-color: lightgreen;
+        transform: scale(1.1);
+        transition: 0.2s ease-in 0.2s;
+    }
+}
+
+.stop-btn {
+    margin-right: 70px;
+    transition: 0.1s ease-out;
+
+    // ^ hover эффект для скейла и смены света
+    &:hover{
+        background-color:  rgb(231, 52, 52);
+        border-color: rgb(231, 52, 52);
+        transform: scale(1.1);
+        transition: 0.2s ease-in;
+    }
+}
